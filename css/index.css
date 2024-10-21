@@ -411,6 +411,48 @@ background-color: var(--nav-background);
 .portfolio .item:hover .caption .icon i {
     transform: rotate(360deg);
 }
+.portfolio .nav .nav-item button{
+    color: var(--nav-background);
+    font-weight: 700;
+    transition: .5s;
+}
+.portfolio .nav .nav-item button.active{
+    color: var(--background-color);
+    transform: translateY(-5px);
+}
+.portfolio .tab-content .tab-pane .caption{
+    background-color: var(--background-color);
+    bottom: -30px;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    opacity: 0;
+    transition: .5s;
+}
+.portfolio .tab-content .tab-pane .items:hover .caption{
+    bottom: -15px;
+    opacity: 1;
+}
+.portfolio .tab-content .tab-pane .caption .caption-info p{
+    font-size: 12px;
+}
+.portfolio .tab-content .tab-pane .caption .caption-icons i{
+    font-size: 18px;
+    transition: .5s;
+    cursor: pointer;
+}
+.portfolio .tab-content .tab-pane .caption .caption-icons i:hover{
+    color: var(--main-color);
+}
+.portfolio .portfolio-data::before{
+    content: "";
+    position: absolute;
+    width: 3%;
+    height: 5px;
+    bottom: -15px;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    background-color: #1365c2;
+}
 /* Start Scroll Section */
 .over-swiper{
     background: linear-gradient(#0077ff93,#0077ff93), url(../images/overlay-bg.jpg);
@@ -589,6 +631,13 @@ background-color: var(--nav-background);
     }
     .footer .footer-info p{
         font-size: 14px;
+    }
+    .portfolio .nav{
+        justify-content: space-evenly;
+    }
+    .portfolio .nav .nav-item button{
+        font-size: 10px;
+        padding: 10px;
     }
     
 }
