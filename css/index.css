@@ -167,6 +167,147 @@ background-color: var(--nav-background);
     line-height: 2;
     letter-spacing: 1px;
 }
+/* Start Resume Section */
+.resume .resume-title::before{
+    content: "";
+    position: absolute;
+    width: 3%;
+    height: 5px;
+    bottom: -15px;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    background-color: #1365c2;
+}
+
+.resume .resume-sumary h3 + span::before{
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    left: 0px;
+    bottom: 5px;
+    border-radius: 50%;
+    border: 2px solid var(--main-color);
+}
+.resume .resume-sumary .sumary-data::before{
+    content: "";
+    position: absolute;
+    height: 110%;
+    width: 1px;
+    left: 5px;
+    top: -7px;
+    background-color: var(--main-color);
+    opacity: .5;
+}
+.resume .resume-sumary .sumary-info .data p::before{
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    left: -20px;
+    bottom: 9px;
+    border-radius: 50%;
+    background-color: var(--nav-background);
+}
+.resume .education-info span{
+    font-size: 14px;
+}
+.resume .education-info::before{
+    content: "";
+    position: absolute;
+    height: 125%;
+    width: 1px;
+    left: 5px;
+    top: -5px;
+    background-color: var(--main-color);
+    opacity: .5;
+}
+.resume .education-info + span::before{
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    left: 0px;
+    bottom: 5px;
+    border-radius: 50%;
+    border: 2px solid var(--main-color);
+}
+.resume .resume-sumary .education-data .brand{
+    font-size: 14px;
+}
+.resume .resume-sumary .education-data::before{
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    top: -5px;
+    left: 5px;
+    background-color: var(--main-color);
+    opacity: .5;
+}
+.resume .resume-sumary .professional-data::before{
+    content: "";
+    position: absolute;
+    height: 113%;
+    width: 1px;
+    top: -12px;
+    left: 5.5px;
+    background-color: var(--main-color);
+    opacity: .5;
+}
+.resume .resume-sumary .professional-data span:nth-child(1){
+    font-size: 14px;
+}
+.resume .resume-sumary .professional-info .data p{
+    font-size: 14px;
+}
+.resume .resume-sumary .professional-info .data p::before{
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    left: -23px;
+    top: 12px;
+    background-color: var(--nav-background);
+    border-radius: 50%;
+} 
+.resume .resume-sumary .professional-data + span::before{
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    top: 6px;
+    left: 0;
+    border: 2px solid var(--main-color);
+    border-radius: 50%;
+}
+.resume .resume-sumary .graphic-info::before{
+    content: "";
+    position: absolute;
+    height: 110%;
+    width: 1px;
+    top: -15px;
+    left: 5px;
+    background-color: var(--main-color);
+    opacity: .5;
+}
+.resume .resume-sumary .graphic-info span:nth-child(1){
+    font-size: 14px;
+}
+.resume .resume-sumary .graphic-info p{
+    font-size: 14px;
+}
+.resume .resume-sumary .graphic-info p::before{
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    left: -23px;
+    top: 12px;
+    background-color: var(--nav-background);
+    border-radius: 50%;
+}
+
 /* Start Services Section */
 .services{
     background-color: var(--body-background);
@@ -392,6 +533,8 @@ background-color: var(--nav-background);
     background-color: var(--sub-color);
     border-top:  3px solid var(--sub-color);
 }
+
+/* BREAKPOINT */
 
 @media screen and ( min-width: 992px) {
     .header .navbar .navbar-nav .nav-item:nth-child(6) .dropdown-menu li:nth-child(2) .deep-dropdown{
