@@ -1,0 +1,70 @@
+:root{
+    --main-color : #0077ff;
+    --sub-color : #1365c2;
+    --nav-background: #171717;
+    --background-color: #fff;
+    --foreground-color: #cde1f7;
+    --body-background : #f5f5f5;
+    --heading-font: #1f1f1f;
+    --sub-title-color: #4e4e4e;
+    --box-shadow : 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.content .row h2::before{
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 60%;
+    background-color: var(--main-color) ;
+    bottom: 5px;
+    left: -10px;
+}
+.content .container .btn{
+    background-color: var(--main-color);
+    border-radius: 20px;
+    color: white;
+}
+.content-two .cont{
+    width: 75%;
+}
+.content-two .cont .content-card{
+    width: 75%;
+}
+.content-card .fa-quote-left,
+.content-card .fa-quote-right{
+    color: var(--main-color);
+}
+.caption span{
+    color: var(--sub-color);
+}
+.content .container .btn:hover{
+    background-color: var(--sub-color);
+}
+
+@media screen and ( max-width: 992px) {
+
+    .content-two .cont{
+        width: 100%;
+    }
+
+}
+
+@media screen and ( max-width: 568px) {
+    .content-two .cont .content-card{
+        width: 90%;
+    }
+    .caption h4{
+        font-size: 16px;
+    }
+    .caption span{
+        font-size: 14px;
+    }
+    .header .navbar .logo h1{
+        font-size: 16px !important;
+        padding-top: 5px;
+    }
+}

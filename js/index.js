@@ -64,6 +64,8 @@ let secCountion = document.querySelector(".counting");
 let started = false;
 
 window.onscroll = function(){
+    
+    AOS.refresh();
 
     if(window.scrollY >= secCountion.offsetTop - 200){
         if(!started){
